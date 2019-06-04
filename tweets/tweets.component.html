@@ -1,0 +1,13 @@
+<ul class="tweets">
+  <li *ngFor="let tweet of tweets">  	
+    <span class="badge">{{tweet.id}}</span> {{tweet.username}} {{tweet.user}} {{tweet.datum}}
+    <p> {{tweet.text}} </p>
+  </li>
+</ul>
+
+<ul class="comments">
+  <li *ngFor="let comment of comments">  	
+    <span class="badge">{{comment.tid}}</span> {{comment.username}} {{comment.datum}}
+    <p> {{comment.text}} </p>
+  </li>
+</ul>
